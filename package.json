@@ -1,6 +1,6 @@
 {
   "name": "iterators-polyfill",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Brings Iterators and Iterables to JavaScript for older browsers.",
   "main": "polyfill.min.js",
   "scripts": {
