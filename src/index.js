@@ -21,6 +21,12 @@ if (!(typeof Array.prototype[Symbol.iterator] === "function")) {
 }
 
 // $FlowFixMe
+if (!(typeof String.prototype[Symbol.iterator] === "function")) {
+	// $FlowFixMe
+	String.prototype[Symbol.iterator] = function iterator () { return new StringIterator(this, "value"); }
+}
+
+// $FlowFixMe
 if (!(typeof NodeList.prototype[Symbol.iterator] === "function")) {
 	const HAS_VALUES_METHOD 	= "values" 	in NodeList.prototype;
 	const HAS_ENTRIES_METHOD 	= "entries" in NodeList.prototype;
