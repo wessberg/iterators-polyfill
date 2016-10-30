@@ -4,8 +4,6 @@ import root 					from "./root";
 import StringIterator from "./string-iterator";
 import ArrayIterator 	from "./array-iterator";
 
-export {StringIterator, ArrayIterator};
-
 // $FlowFixMe
 if (!(typeof Array.prototype[Symbol.iterator] === "function")) {
 	const HAS_VALUES_METHOD 	= "values" 	in Array.prototype;
